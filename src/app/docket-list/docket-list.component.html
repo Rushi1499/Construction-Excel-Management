@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Docket For Construction Site Data</title>
+
+</head>
+
+<body class="background">
+
+    <h1 style="text-align: center;"><b> Construction Site Docket</b></h1>
+
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>No Of Hours Works </th>
+                <th>Rate Per Hour</th>
+                <th>Supplier Name</th>
+                <th>Purchase Order</th>
+                <th>Purchase Order Desc</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ this.fName }}</td>
+                <td>{{ this.sTime }}</td>
+                <td>{{ this.eTime }}</td>
+                <td>{{ this.worked }} Hours</td>
+                <td>&#x20B9;{{ this.rate }}</td>
+                <td>{{ this.sName }}</td>
+                <td>{{ this.pOrder }}</td>
+                <td>{{ this.desc }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

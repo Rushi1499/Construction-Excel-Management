@@ -1,0 +1,83 @@
+
+@media only screen and (min-width: 599.98px) {
+    .my-form{
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+      }
+      .full-width {
+        width: 70%;
+      }
+    
+      .form-size {
+        width: 100%;
+      }
+    
+      body {
+    
+        display: flex;
+      
+        justify-content: center;
+      
+        align-items: center;
+      
+        height: 70%; /* This centers content vertically */
+      
+        margin: 0;
+      
+      }
+      
+       
+      
+     
+      .button{
+        background-color: rgb(94, 145, 208); 
+        /* width: 150px;  */
+        width: 310px;
+      }
+       
+      
+      .mat-card {
+      
+        /* Optional: Add styling to the MatCard if needed */
+      
+        border: 2px solid #ccc;
+      
+        padding: 30px;
+      
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+      }
+    
+      .container {
+    
+        display: flex;
+    
+        justify-content: center;
+    
+        align-items: center;
+    
+        height: 150vh; 
+        width: 500px;
+    
+    }
+    
+    .background{
+      background-color: rgb(208, 223, 238);
+      height: 100%;
+    }
+    
+    .centered-card {
+    
+        text-align: center;
+        height: 700px;
+        width: 120vh;
+        justify-content: center;
+      
+        align-items: center;
+        margin-top: 20px; /* Adjust the value as needed */
+        transition: margin 0.3s ease; /* Optional for smooth animation */
+    
+    
+    }
+    }

@@ -1,0 +1,75 @@
+<!-- <p>registration works!</p> -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body class="background">
+
+    <div class="container">
+
+        <div class="centered-card">
+            <mat-card-content>
+
+
+
+                <mat-card>
+                    <form>
+                        <br>
+
+
+                        <!-- <form class="my-form"> -->
+                        <mat-form-field class="full-width">
+                            <mat-label>Name</mat-label>
+                            <input matInput placeholder="First name" name="fname" [(ngModel)]="this.fName" required>
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                            <mat-label>Start Time</mat-label>
+                            <input matInput placeholder="10:00 AM" name="sTime" [(ngModel)]="this.sTime" required>
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                            <mat-label>End Time</mat-label>
+                            <input matInput placeholder="5:00 PM" name="eTIme" [(ngModel)]="this.eTime" required>
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                            <mat-label>No of hours worked</mat-label>
+                            <input matInput placeholder="8 Hours" name="worked" [(ngModel)]="this.worked" required>
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                            <mat-label>Rate per hour</mat-label>
+                            <input matInput placeholder="50" name="rate" [(ngModel)]="this.rate" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width">
+                            <mat-label>Supplier Name</mat-label>
+                            <mat-select name="rate" [(ngModel)]="this.sName" (selectionChange)="onDropdownSelect()"
+                                required>
+                                <mat-option *ngFor="let item of this.filteredDropdownData" [value]="item.supplierName+ ',' + item.wbsCode">{{item.supplierName}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width">
+                            <mat-label>Purchase order</mat-label>
+                            <mat-select name="rate" [(ngModel)]="this.pOrder" (selectionChange)="findDescription()"
+                                required>
+                                <mat-option *ngFor="let item of this.filterDataPoNumber"
+                                    [value]="item.itemNo+ '-' + item.poNumber">{{ item.poNumber}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <div class="d-flex justify-content-center">
+                            <button mat-raised-button class="button" (click)="Submit()" color="primary">Submit</button>
+                        </div>
+                        <br>
+
+                    </form>
+                </mat-card>
+            </mat-card-content>
+        </div>
+    </div>
+</body>
+
+</html>
